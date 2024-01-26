@@ -9,134 +9,154 @@
 }
 
 :root {
-   --fonte-padrao: "open sans", Arial, Helvetica, sans-serif;
+  --fonte-padrao: "open sans", Arial, Helvetica, sans-serif;
 }
 
 ::before,
 ::after {
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: var(--fonte-padrao);
 }
-.logo-header img{
-  width: 150px;
-  height: 75px;
-  cursor: pointer;
-  margin-left: 100px;
- 
-}
 
-li,a,button{
+li,
+a,
+button {
   font-family: var(--fonte-padrao);
   font-weight: 500;
   font-size: 16px;
-  color:black;
+  color: black;
   text-decoration: none;
 }
-header{
+
+/* ======================= START HEADER ======================= */
+header {
   width: 100%;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding:20px 0%;
+  padding: 10px 0;
   position: fixed;
   z-index: 9999;
- /*--border:5px solid #04b8ff;*/
-  
- background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.1));
-
+  /*--border:5px solid #04b8ff;*/
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
 }
-header nav{
+
+header nav {
   display: flex;
 }
-.nav_links{
+
+.nav_links {
   list-style: none;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   padding-right: 15px;
 }
-.nav_links li{
+
+header .nav_links li {
   padding: 0px 15px;
   padding-top: 10px;
   display: inline-block;
 }
-.nav_links li a{
+
+header .nav_links li a {
   transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover{
-  color:rgb(0, 21, 255);
 }
 
-button{
+header .nav_links li a:hover {
+  color: rgb(0, 21, 255);
+}
+
+header .logo-header img {
+  width: 150px;
+  height: 75px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+button {
   margin-right: 75px;
   padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
-  border:none;
-  border-radius:10px ;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  color:white;
-  
+  color: white;
 }
-button:hover{
-  background-color: rgba(0,136,169,0.8);
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
 }
-.home-page-background{
+
+/* ======================= START HOME-PAGE ======================= */
+.home-page-background {
   width: 100%;
   height: 100vh;
   display: flex;
- 
 }
-.home-page-content-left{
+
+.home-page-content-left {
   width: 50%;
   height: 100%;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   justify-content: start;
   /*border:5px solid #ff0400;*/
 }
-.home-page-content-right{
+
+.home-page-content-right {
   width: 50%;
   height: 100%;
   /*border:5px solid #00ff0d;*/
   background-image: url("../img/Course-Homepage.jpeg");
   background-position: center;
-  background-size: cover;  
+  background-size: cover;
 }
-.home-page-left-box{
+
+.home-page-left-box {
   /*border:5px solid purple;*/
   margin-bottom: 75px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
 }
-.homepage-left-box-text{
+
+.homepage-left-box-text {
   font-size: 35px;
 }
-.home-page-left-box-date{
+
+.home-page-left-box-date {
   font-size: 20px;
 }
-.home-page-left-countdown{
+
+.home-page-left-countdown {
   display: flex;
-  gap:28px;
+  gap: 28px;
 }
-.home-page-left-countdown-1{
+
+.home-page-left-countdown-1 {
   border: 28px solid rgb(146, 146, 146);
-  
 }
-.home-page-left-countdown-2{
+
+.home-page-left-countdown-2 {
   border: 28px solid rgb(149, 149, 149);
 }
-.home-page-left-countdown-3{
+
+.home-page-left-countdown-3 {
   border: 28px solid rgb(122, 122, 122);
 }
-.home-page-left-countdown-4{
+
+.home-page-left-countdown-4 {
   border: 28px solid rgb(107, 107, 107);
 }
-
-
 
 /* ======================= START FOOTER ======================= */
 footer {
@@ -198,4 +218,3 @@ footer .footer-container .footer-down .footer-down-right a {
 footer .footer-container .footer-down .footer-down-right img {
   width: 30px;
 }
-
