@@ -71,11 +71,64 @@ button:hover{
   background-color: rgba(0,136,169,0.8);
 }
 
+/* ======================= START FOOTER ======================= */
+footer {
+  padding: 2rem;
+  background-color: antiquewhite;
+  font-size: 12px;
+}
 
+footer a {
+  font-size: 12px;
+}
 
+footer .footer-container .footer-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
 
+footer .footer-container .footer-up img {
+  width: auto;
+  height: 60px;
+}
 
+footer .footer-container .footer-up p {
+  margin-bottom: 0.3rem;
+}
 
+footer .footer-container .footer-up .footer-up-right {
+  display: flex;
+}
 
+footer .footer-container .footer-up .footer-up-right .footer-contacts {
+  display: block;
+  margin: 0 2rem;
+}
 
+footer .footer-container .footer-line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+footer .footer-container .footer-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+footer .footer-container .footer-down .footer-down-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-container .footer-down .footer-down-right a {
+  margin-left: 1rem;
+}
+
+footer .footer-container .footer-down .footer-down-right img {
+  width: 30px;
+}
 
