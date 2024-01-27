@@ -83,16 +83,17 @@ header .logo-header img {
 button {
   margin-right: 75px;
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #18A0FB;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: white;
+  font-size: 14px;
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: #18A0FB;
 }
 
 /* ======================= START HOME-PAGE ======================= */
@@ -134,28 +135,30 @@ button:hover {
 }
 
 .home-page-left-box-date {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.home-page-left-countdown {
+.countdown {
   display: flex;
-  gap: 28px;
+  gap: 20px;
+  text-align: center;
 }
 
-.home-page-left-countdown-1 {
-  border: 28px solid rgb(146, 146, 146);
+.countdown1 {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.home-page-left-countdown-2 {
-  border: 28px solid rgb(149, 149, 149);
+.countdown1 .countdown1-number {
+  margin-top: 10px;
+  font-size: 26px;
 }
 
-.home-page-left-countdown-3 {
-  border: 28px solid rgb(122, 122, 122);
-}
-
-.home-page-left-countdown-4 {
-  border: 28px solid rgb(107, 107, 107);
+.countdown1 .countdown1-number-text {
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 /* ======================= START TEAM ======================= */
