@@ -83,16 +83,17 @@ header .logo-header img {
 button {
   margin-right: 75px;
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: #18A0FB;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: white;
+  font-size: 14px;
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: #18A0FB;
 }
 
 /* ======================= START HOME-PAGE ======================= */
@@ -134,28 +135,160 @@ button:hover {
 }
 
 .home-page-left-box-date {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.home-page-left-countdown {
+.countdown {
   display: flex;
-  gap: 28px;
+  gap: 20px;
+  text-align: center;
 }
 
-.home-page-left-countdown-1 {
-  border: 28px solid rgb(146, 146, 146);
+.countdown1 {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.home-page-left-countdown-2 {
-  border: 28px solid rgb(149, 149, 149);
+.countdown1 .countdown1-number {
+  margin-top: 10px;
+  font-size: 26px;
 }
 
-.home-page-left-countdown-3 {
-  border: 28px solid rgb(122, 122, 122);
+.countdown1 .countdown1-number-text {
+  margin-top: 5px;
+  font-size: 12px;
 }
 
-.home-page-left-countdown-4 {
-  border: 28px solid rgb(107, 107, 107);
+/* ======================= START TEAM ======================= */
+.team {
+  padding: 6rem 0 8rem;
+  font-family: var(--fonte-padrao);
+}
+.team .team-container {
+  display: block;
+}
+.team .team-container .title-team h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.team .team-container .team-box {
+  width: 48.7rem;
+  margin: auto;
+}
+
+.team .team-container .team-box ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+.team .team-container .team-box li {
+  width: 14rem;
+  height: 19rem;
+  margin: 1rem;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 0 25px 0 25px;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.6s;
+}
+
+.team .team-container .team-box #team-member {
+  width: 14rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 25px 0 25px;
+}
+
+.team .team-container .team-box .team-info {
+  padding: 1rem;
+  border-radius: 0 25px 0 25px;
+  height: 0;
+  transition: 0.6s;
+}
+
+.team .team-container .team-box .team-info .team-redes-sociais img {
+  width: 20px;
+  margin-right: 0.2rem;
+  transition: 0.1s;
+}
+
+.team .team-container .team-box .team-info p {
+  font-size: 14px;
+  margin-top: 0.3rem;
+}
+
+.team .team-container .team-box .team-desc {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.team .team-container .team-box .team-desc-box {
+  border: 1px solid black;
+  width: max-content;
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+}
+
+.team .team-container .team-box .team-desc p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #383838;
+}
+
+.team .team-container .team-box li:hover .team-info {
+  background-color: #18A0FB;
+  height: 19rem;
+}
+
+.team .team-container .team-box li:hover #team-member {
+  visibility: hidden;
+}
+
+.team .team-container .team-box .team-info .team-redes-sociais img:hover {
+  transform: scale(1.05);
+}
+
+/* ======================= START APPLY ======================= */
+.apply {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 6rem;
+}
+
+.apply .apply-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.apply .apply-countdown {
+  width: max-content;
+  margin: 1.5rem auto;
+}
+
+.apply .apply-check-social-media p {
+  font-size: 26px;
+  margin: 4rem 0 0.8rem;
+  font-weight: 100;
+}
+
+.apply .apply-check-social-media img {
+  width: 25px;
+  margin: 0.5rem;
+}
+
+.apply button {
+  margin: 0;
 }
 
 /* ======================= START FOOTER ======================= */
