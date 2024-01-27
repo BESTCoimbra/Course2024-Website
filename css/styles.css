@@ -158,6 +158,102 @@ button:hover {
   border: 28px solid rgb(107, 107, 107);
 }
 
+/* ======================= START TEAM ======================= */
+.team {
+  padding: 6rem 0 8rem;
+  font-family: var(--fonte-padrao);
+}
+.team .team-container {
+  display: block;
+}
+.team .team-container .title-team h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.team .team-container .team-box {
+  width: 48.7rem;
+  margin: auto;
+}
+
+.team .team-container .team-box ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+.team .team-container .team-box li {
+  width: 14rem;
+  height: 19rem;
+  margin: 1rem;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 0 25px 0 25px;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.6s;
+}
+
+.team .team-container .team-box #team-member {
+  width: 14rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 25px 0 25px;
+}
+
+.team .team-container .team-box .team-info {
+  padding: 1rem;
+  border-radius: 0 25px 0 25px;
+  height: 0;
+  transition: 0.6s;
+}
+
+.team .team-container .team-box .team-info .team-redes-sociais img {
+  width: 20px;
+  margin-right: 0.2rem;
+  transition: 0.1s;
+}
+
+.team .team-container .team-box .team-info p {
+  font-size: 14px;
+  margin-top: 0.3rem;
+}
+
+.team .team-container .team-box .team-desc {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.team .team-container .team-box .team-desc-box {
+  border: 1px solid black;
+  width: max-content;
+  padding: 0.3rem 0.7rem;
+  border-radius: 30px;
+}
+
+.team .team-container .team-box .team-desc p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #383838;
+}
+
+.team .team-container .team-box li:hover .team-info {
+  background-color: #18A0FB;
+  height: 19rem;
+}
+
+.team .team-container .team-box li:hover #team-member {
+  visibility: hidden;
+}
+
+.team .team-container .team-box .team-info .team-redes-sociais img:hover {
+  transform: scale(1.05);
+}
+
 /* ======================= START FOOTER ======================= */
 footer {
   padding: 2rem;
