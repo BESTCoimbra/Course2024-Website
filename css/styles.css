@@ -257,6 +257,40 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* ======================= START APPLY ======================= */
+.apply {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 6rem;
+}
+
+.apply .apply-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.apply .apply-countdown {
+  width: max-content;
+  margin: 1.5rem auto;
+}
+
+.apply .apply-check-social-media p {
+  font-size: 26px;
+  margin: 4rem 0 0.8rem;
+  font-weight: 100;
+}
+
+.apply .apply-check-social-media img {
+  width: 25px;
+  margin: 0.5rem;
+}
+
+.apply button {
+  margin: 0;
+}
+
 /* ======================= START FOOTER ======================= */
 footer {
   padding: 2rem;
