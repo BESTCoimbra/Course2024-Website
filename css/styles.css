@@ -143,6 +143,200 @@ button:hover {
   gap: 20px;
   text-align: center;
 }
+/* ======================= WHAT IS BEST COURSE ======================= */
+.best-background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.best-box{
+  margin-left: 210px;
+  margin-right: 100px;
+  margin-top: 150px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+}
+.best-text-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+.best-text-1-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+  
+}
+.best-text-1-line{
+  height: 4px;
+  width: 368px;
+  background-color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  
+}
+.best-text-1{
+  font-size: 20px;
+}
+.best-text-2{
+  height: auto;
+  width: 800px;
+  text-align: center;
+  font-size: 17px;
+}
+.best-imagens{
+  display: flex;
+  gap:50px;
+}
+.best-imagem-1{
+    width: 335px; 
+    height: 200px; 
+    background-color: rgba(147, 255, 149, 0.334);
+    border: 5px rgba(147, 255, 149, 0.334);
+    border-radius: 10px;
+    background-image: url("../img/image-11.png");
+    background-size: cover; 
+    background-position: center;
+}
+.best-imagem-2{
+    width: 335px; 
+    height: 200px; 
+    background-color: rgba(80, 161, 255, 0.459);
+    border: 5px  rgba(80, 161, 255, 0.459);
+    border-radius: 10px;
+    background-image: url("../img/image-12.png");
+    background-size: cover; 
+    background-position: center;
+}
+.best-imagem-3{
+  width: 335px; 
+  height: 200px;  
+  background-color: rgba(255, 217, 147, 0.586);
+  background-image: url("../img/image-13.png");
+  background-size: cover; 
+    background-position: center;
+}
+.best-imagem-verde{
+  width: 335px; 
+  height: 200px;  
+  background-color: rgba(76, 173, 6, 0.7);
+  border: 5px  rgba(76, 173, 6, 0.7);
+  border-radius: 10px;
+}
+.best-imagem-azul{
+  width: 335px; 
+  height: 200px;  
+  background-color: rgba(27, 83, 252, 0.55);
+  border: 5px  rgba(27, 83, 252, 0.55);
+  border-radius: 10px;
+
+}
+.best-imagem-laranja{
+  width: 335px; 
+  height: 200px;  
+  background-color: rgba(200, 130, 9, 0.65);
+  border: 5px  rgba(200, 130, 9, 0.65);
+  border-radius: 10px;
+
+}
+.best-imagem-verde {
+  display: flex;
+  align-items: center;
+  
+}
+.best-imagem-azul {
+  display: flex;
+  align-items: center;
+  
+}
+.best-imagem-laranja {
+  display: flex;
+  align-items: center;
+  
+}
+
+.best-verde-box {
+ display: flex;
+ flex-direction: column;
+ margin-top: 20px;
+ margin-left:28px ;
+ margin-right:130px ;
+ margin-bottom: 20px;
+ 
+ gap: 10px;
+}
+.best-texto-1-verde,.best-texto-2-verde {
+  color:white;
+  font-size:11px;
+}
+.best-simbolo-verde{
+  background-image: url("../img/graduation-cap.png");
+  background-size: cover; 
+  background-position: center;
+  margin-top: 28px;
+  width: 55px;
+  height: 55px;
+}
+.best-texto-2-verde{
+  margin-bottom: 15px;
+}
+.best-azul-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left:28px ;
+  margin-right:130px ;
+  margin-bottom: 20px;
+  
+  gap: 10px;
+ }
+ .best-texto-1-azul,.best-texto-2-azul {
+   color:white;
+   font-size:11px;
+ }
+ .best-simbolo-azul{
+   background-image: url("../img/world.png");
+   background-size: cover; 
+   background-position: center;
+   margin-top: 28px;
+   width: 55px;
+   height: 55px;
+ }
+ .best-texto-2-azul{
+   margin-bottom: 15px;
+ }
+ .best-laranja-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left:28px ;
+  margin-right:130px ;
+  margin-bottom: 20px;
+  
+  gap: 10px;
+ }
+ .best-texto-1-laranja,.best-texto-2-laranja {
+   color:white;
+   font-size:11px;
+ }
+ .best-simbolo-laranja{
+   background-image: url("../img/support.png");
+   background-size: cover; 
+   background-position: center;
+   margin-top: 28px;
+   width: 55px;
+   height: 55px;
+ }
+ .best-texto-2-laranja{
+   margin-bottom: 15px;
+ }
+
+
 
 .countdown1 {
   width: 70px;
@@ -351,3 +545,159 @@ footer .footer-container .footer-down .footer-down-right a {
 footer .footer-container .footer-down .footer-down-right img {
   width: 30px;
 }
+/* ======================= GALLERY ======================= */
+.best-gallery{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding: 5rem 0;
+}
+.best-galley-text{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.best-galley-text h1{
+  font-size: 28px;
+}
+.best-gallery-buttons{
+  background-color:rgb(232, 232, 232) ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.best-gallery-below{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:15px;
+}
+.best-gallery-buttons button {
+  margin: 0;
+  width: 260px; 
+  height: 45px;
+  color:black;
+  background-color: rgb(232, 232, 232);
+  transition: background-color 0.3s;
+}
+.best-gallery-buttons button:hover {
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px;
+}
+.best-gallery-image-row,.best-gallery-image-row-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+.best-gallery-image-1,.best-gallery-image-2,.best-gallery-image-3,.best-gallery-image-4,.best-gallery-image-5,.best-gallery-image-6{
+  width: 400px; 
+  height: 225px; 
+  background-color: rgb(202, 202, 202);
+  border-radius: 10px;
+}
+.best-gallery-images{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+/* ======================= WHAT IS BEST COIMBRA ======================= */
+.best-coimbra{
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  padding: 5rem 0;
+}
+.best-coimbra-title{
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.best-coimbra-title h1{
+  font-size: 35px;
+}
+.best-coimbra-below{ 
+ margin: auto;
+ width: 70rem;
+ display: flex;
+ justify-content: center; 
+ align-items: center;
+ 
+ 
+}
+.best-coimbra-image{
+  display: inline-block;
+  width: 40%;
+}
+.best-coimbra-image img{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+.best-coimbra-text{
+
+  width: 60%;
+  padding: 0 3rem;
+
+}
+@media only screen and (max-width: 1120px) {
+  .best-coimbra-below{
+    display: flex;
+    align-items: center;
+    gap:50px;
+    flex-direction: column;
+    width: 60rem;
+  }
+}
+@media only screen and (max-width: 965px) {
+  .best-coimbra-below{
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 805px) {
+  .best-coimbra-below{
+    width: 40rem;
+  }
+  .best-coimbra-image{
+    display: inline-block;
+    width: 55%;
+  }
+  .best-coimbra-text{
+    width: 90%;
+    padding: 0 3rem;
+}
+}
+@media only screen and (max-width: 639px) {
+  .best-coimbra-below{
+    width: 35rem;
+  }
+  .best-coimbra-image{
+    display: inline-block;
+    width: 60%;
+  }
+  .best-coimbra-text{
+    width: 95%;
+    padding: 0 3rem;
+}
+}
+@media only screen and (max-width: 559px) {
+  .best-coimbra-below{
+    width: 28rem;
+  }
+  .best-coimbra-image{
+    display: inline-block;
+    width: 70%;
+  }
+  .best-coimbra-text{
+    width: 100%;
+    padding: 0 3rem;
+}
+}
+
+
+
