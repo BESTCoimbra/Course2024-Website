@@ -677,7 +677,6 @@ footer .footer-container .footer-down .footer-down-right img {
   padding: 5rem 0;
 }
 .best-coimbra-title{
-
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -691,11 +690,10 @@ footer .footer-container .footer-down .footer-down-right img {
  display: flex;
  justify-content: center; 
  align-items: center;
- 
+ padding: 0 8rem;
  
 }
 .best-coimbra-image{
-  display: inline-block;
   width: 40%;
 }
 .best-coimbra-image img{
@@ -704,7 +702,6 @@ footer .footer-container .footer-down .footer-down-right img {
   border-radius: 5px;
 }
 .best-coimbra-text{
-
   width: 60%;
   padding: 0 3rem;
 
@@ -717,11 +714,23 @@ footer .footer-container .footer-down .footer-down-right img {
     flex-direction: column;
     width: 60rem;
   }
+  .best-coimbra-image{
+    display: inline-block;
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 965px) {
   .best-coimbra-below{
     width: 50rem;
   }
+  .best-coimbra-image{
+    display: inline-block;
+    width: 60%;
+  }
+  .best-coimbra-text{
+    width: 90%;
+    padding: 0 0rem;
+}
 }
 @media only screen and (max-width: 805px) {
   .best-coimbra-below{
@@ -729,11 +738,11 @@ footer .footer-container .footer-down .footer-down-right img {
   }
   .best-coimbra-image{
     display: inline-block;
-    width: 55%;
+    width: 90%;
   }
   .best-coimbra-text{
     width: 90%;
-    padding: 0 3rem;
+    padding: 0 0rem;
 }
 }
 @media only screen and (max-width: 639px) {
@@ -742,11 +751,11 @@ footer .footer-container .footer-down .footer-down-right img {
   }
   .best-coimbra-image{
     display: inline-block;
-    width: 60%;
+    width: 90%;
   }
   .best-coimbra-text{
-    width: 95%;
-    padding: 0 3rem;
+    width: 100%;
+    padding: 0 0rem;
 }
 }
 @media only screen and (max-width: 559px) {
@@ -755,11 +764,15 @@ footer .footer-container .footer-down .footer-down-right img {
   }
   .best-coimbra-image{
     display: inline-block;
-    width: 70%;
+    width: 300px;
   }
   .best-coimbra-text{
     width: 100%;
-    padding: 0 3rem;
+    font-size: 15px;
+    padding: 0 0rem;
+}
+  .best-coimbra-title h1{
+    font-size: 28px;
 }
 }
 
