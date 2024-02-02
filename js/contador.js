@@ -12,12 +12,22 @@ if(days<0){
     document.querySelector(".demo-hours-p").innerHTML = 0;
     document.querySelector(".demo-minutes-p").innerHTML = 0;
     document.querySelector(".demo-seconds-p").innerHTML = 0;
+
+    document.querySelector(".demo-days-p2").innerHTML = 0;
+    document.querySelector(".demo-hours-p2").innerHTML = 0;
+    document.querySelector(".demo-minutes-p2").innerHTML = 0;
+    document.querySelector(".demo-seconds-p2").innerHTML = 0;
 }
 else {
     document.querySelector(".demo-days-p").innerHTML = days;
     document.querySelector(".demo-hours-p").innerHTML = hours;
     document.querySelector(".demo-minutes-p").innerHTML = minutes;
     document.querySelector(".demo-seconds-p").innerHTML = seconds;
+    
+    document.querySelector(".demo-days-p2").innerHTML = days;
+    document.querySelector(".demo-hours-p2").innerHTML = hours;
+    document.querySelector(".demo-minutes-p2").innerHTML = minutes;
+    document.querySelector(".demo-seconds-p2").innerHTML = seconds;
 }
 
 if (t < 0) {
