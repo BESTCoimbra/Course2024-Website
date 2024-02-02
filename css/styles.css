@@ -145,15 +145,13 @@ button:hover {
 }
 /* ======================= WHAT IS BEST COURSE ======================= */
 .best-background {
-  width: 100%;
-  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  
 }
 .best-box{
-  margin-left: 210px;
-  margin-right: 100px;
-  margin-top: 150px;
-  margin-bottom: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,7 +333,73 @@ button:hover {
  .best-texto-2-laranja{
    margin-bottom: 15px;
  }
+ @media only screen and (max-width: 1131px) {
+  .best-imagens{
+    flex-direction: column;
+  }
+ }
+ @media only screen and (max-width: 812px) {
+  .best-box{
+    width: 90%;
+  }
+  .best-text-1{
+    font-size: 17px;
+  }
+  .best-text-2{
+    height: auto;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+  }
+  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
+    width: auto; 
+  }
+  .best-imagens{
+    width: 300px;
+  }
+ }
+ @media only screen and (max-width: 765px) {
+  .best-box{
+    width: 90%;
+  }
+  .best-text-1{
+    font-size: 15px;
+  }
+  .best-text-2{
+    height: auto;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+  }
+  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
+    width: auto; 
+  }
+  .best-imagens{
+    width: 275px;
+  }
+ }
+ @media only screen and (max-width: 553px) {
+  .best-box{
+    width: 90%;
+  }
+  .best-text-1{
+    font-size: 13.5px;
+  }
+  .best-text-2{
+    height: auto;
+    text-align: center;
+    width: auto;
+    font-size: 15px;
+  }
+  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
+    width: auto; 
+  }
+  .best-imagens{
+    width: 245px;
+  }
 
+ }
+ 
 
 
 .countdown1 {
