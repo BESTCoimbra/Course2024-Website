@@ -869,6 +869,18 @@ span+span {
   transition: 0.05s;
 }
 
+.info-material1 {
+  background-image: url(../img/fotos/Group\ 43.jpg);
+}
+
+.info-material2 {
+  background-image: url(../img/fotos/Group\ 43.jpg);
+}
+
+.info-material3 {
+  background-image: url(../img/fotos/Group\ 43.jpg);
+}
+
 .info-box .info-material img {
   width: 130px;
   height: 130px;
