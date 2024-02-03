@@ -744,7 +744,10 @@ span+span {
 
 @media only screen and (max-width: 1131px) {
   .best-imagens {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
   }
 }
 
@@ -764,18 +767,7 @@ span+span {
     font-size: 16px;
   }
 
-  .best-imagem-1,
-  .best-imagem-2,
-  .best-imagem-3,
-  .best-imagem-verde,
-  .best-imagem-azul,
-  .best-imagem-laranja {
-    width: auto;
-  }
-
-  .best-imagens {
-    width: 300px;
-  }
+  
 }
 
 @media only screen and (max-width: 765px) {
@@ -796,18 +788,7 @@ span+span {
     max-width: 470px;
   }
 
-  .best-imagem-1,
-  .best-imagem-2,
-  .best-imagem-3,
-  .best-imagem-verde,
-  .best-imagem-azul,
-  .best-imagem-laranja {
-    width: auto;
-  }
-
-  .best-imagens {
-    width: 275px;
-  }
+  
 }
 
 @media only screen and (max-width: 553px) {
@@ -826,18 +807,8 @@ span+span {
     font-size: 15px;
   }
 
-  .best-imagem-1,
-  .best-imagem-2,
-  .best-imagem-3,
-  .best-imagem-verde,
-  .best-imagem-azul,
-  .best-imagem-laranja {
-    width: auto;
-  }
+  
 
-  .best-imagens {
-    width: 245px;
-  }
 }
 
 /* ======================= START COURSE ======================= */
@@ -1187,6 +1158,31 @@ footer .footer-container .footer-down .footer-down-right a {
 footer .footer-container .footer-down .footer-down-right img {
   width: 30px;
 }
+@media only screen and (max-width: 708px) {
+  footer .footer-container .footer-up {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .footer-container .footer-up-left {
+    text-align: center;
+  }
+  footer .footer-container .footer-down {
+    flex-direction: column;
+    gap:15px;
+  }
+  footer .footer-container .footer-down .footer-down-right img {
+    width: 26px; 
+  }
+}
+@media only screen and (max-width: 580px) {
+  footer .footer-container .footer-up .footer-up-right {
+    flex-direction: column;
+    align-items: center;
+    gap:17px;
+    text-align: center; 
+  }
+}
+ 
 
 /* ======================= GALLERY ======================= */
 .best-gallery {
@@ -1279,6 +1275,136 @@ footer .footer-container .footer-down .footer-down-right img {
   flex-direction: column;
   gap: 15px;
 }
+@media only screen and (max-width: 1320px) {
+  .best-gallery-buttons {
+    width: 1000px;
+  }
+    .best-gallery-image-1,
+    .best-gallery-image-2,
+    .best-gallery-image-3,
+    .best-gallery-image-4,
+    .best-gallery-image-5,
+    .best-gallery-image-6 {
+      width: 323.5px;
+      height: 178px;
+    }
+  
+    .best-gallery-images img {
+      width: 323.5px;
+      height: 178px;
+    }
+}
+@media only screen and (max-width: 1086px) {
+  .best-gallery-buttons {
+    width: 750px;
+  }
+    .best-gallery-image-1,
+    .best-gallery-image-2,
+    .best-gallery-image-3,
+    .best-gallery-image-4,
+    .best-gallery-image-5,
+    .best-gallery-image-6 {
+      width: 241px;
+      height: 133px;
+    }
+  
+    .best-gallery-images img {
+      width: 241px;
+      height: 133px;
+    }
+}
+@media only screen and (max-width: 838px) {
+  .best-gallery-buttons {
+    width: 615px;
+  }
+    .best-gallery-image-1,
+    .best-gallery-image-2,
+    .best-gallery-image-3,
+    .best-gallery-image-4,
+    .best-gallery-image-5,
+    .best-gallery-image-6 {
+      width: 195px;
+      height: 106px;
+    }
+  
+    .best-gallery-images img {
+      width: 195px;
+      height: 106px;
+    }
+    .best-gallery-text h1 {
+      font-size: 28px;
+    }
+}
+@media only screen and (max-width: 700px) {
+  .best-gallery-buttons {
+    width: 545px;
+  }
+    .best-gallery-image-1,
+    .best-gallery-image-2,
+    .best-gallery-image-3,
+    .best-gallery-image-4,
+    .best-gallery-image-5,
+    .best-gallery-image-6 {
+      width: 171.5px;
+      height: 95.5px;
+    }
+  
+    .best-gallery-images img {
+      width: 171.5px;
+      height: 95.5px;
+    }
+    .best-gallery-text h1 {
+      font-size: 28px;
+    }
+}
+@media only screen and (max-width: 628px) {
+  .best-gallery-buttons {
+      width: 450px;
+    }
+  
+    .best-gallery-image-1,
+    .best-gallery-image-2,
+    .best-gallery-image-3,
+    .best-gallery-image-4,
+    .best-gallery-image-5,
+    .best-gallery-image-6 {
+      width: 141px;
+      height: 78px;
+    }
+  
+    .best-gallery-images img {
+      width: 141px;
+      height: 78px;
+    }
+  
+    .best-gallery-text h1 {
+      font-size: 23px;
+    }
+  }
+  @media only screen and (max-width: 535px) {
+    .best-gallery-buttons {
+        width: 375px;
+      }
+    
+      .best-gallery-image-1,
+      .best-gallery-image-2,
+      .best-gallery-image-3,
+      .best-gallery-image-4,
+      .best-gallery-image-5,
+      .best-gallery-image-6 {
+        width: 115px;
+        height: 85px;
+      }
+    
+      .best-gallery-images img {
+        width: 115px;
+        height: 85px;
+      }
+    
+      .best-gallery-text h1 {
+        font-size: 23px;
+      }
+    }
 
 /* ======================= WHAT IS BEST COIMBRA ======================= */
 .best-coimbra {
