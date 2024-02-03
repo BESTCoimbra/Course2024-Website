@@ -73,3 +73,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   window.addEventListener("scroll", onScroll);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var leftBox = document.querySelector('.course-image-box-left');
+    var rightBox = document.querySelector('.course-image-box-right');
+    var leftBoxText = document.querySelector('.course-image-box-left h4');
+    var rightBoxText = document.querySelector('.course-image-box-right h4');
+    var leftBoxShadow = document.querySelector('.course-image-box-left-shadow');
+    var rightBoxShadow = document.querySelector('.course-image-box-right-shadow');
+  
+    leftBox.addEventListener('mouseenter', function() {
+      leftBox.style.width = "80%";
+      rightBox.style.width = "20%";
+      rightBoxText.style.display = "none";
+      leftBoxShadow.style.display = "none";
+    });
+  
+    leftBox.addEventListener('mouseleave', function() {
+      leftBox.style.width = "50%";
+      rightBox.style.width = "50%";
+      rightBoxText.style.display = "block";
+      leftBoxShadow.style.display = "block";
+    });
+  
+    rightBox.addEventListener('mouseenter', function() {
+      rightBox.style.width = "80%";
+      leftBox.style.width = "20%";
+      leftBoxText.style.display = "none";
+      rightBoxShadow.style.display = "none";
+    });
+  
+    rightBox.addEventListener('mouseleave', function() {
+      rightBox.style.width = "50%";
+      leftBox.style.width = "50%";
+      leftBoxText.style.display = "block";
+      rightBoxShadow.style.display = "block";
+    });
+  });
