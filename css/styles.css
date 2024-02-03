@@ -842,7 +842,7 @@ span+span {
 
 /* ======================= START COURSE ======================= */
 .course {
-  padding: 5rem 3rem;
+  padding: 5rem 3rem 3rem;
   font-family: var(--fonte-padrao);
 }
 
@@ -937,7 +937,7 @@ span+span {
 
 /* ======================= START INFO ======================= */
 .info {
-  padding: 5rem 2rem 4rem;
+  padding: 7rem 2rem 4rem;
   font-family: var(--fonte-padrao);
 }
 
@@ -1095,7 +1095,7 @@ span+span {
   text-align: center;
   margin: auto;
   font-family: var(--fonte-padrao);
-  padding-bottom: 6rem;
+  padding-bottom: 4.5rem;
 }
 
 .apply .apply-title {
@@ -1194,7 +1194,7 @@ footer .footer-container .footer-down .footer-down-right img {
   flex-direction: column;
   font-family: var(--fonte-padrao);
   gap:15px;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem 5rem;
 }
 
 .best-gallery-text {
