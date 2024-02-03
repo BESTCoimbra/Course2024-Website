@@ -10,6 +10,13 @@
 
 @font-face {
   font-family: 'Cyberverse';
+  src: url('../fonts/cyberverse/Cyberverse\ Bold\ Italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CyberverseTilte';
   src: url('../fonts/cyberverse/Cyberverse.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
@@ -31,6 +38,7 @@
 
 :root {
   --fonte-destaque: 'Cyberverse';
+  --fonte-title: 'CyberverseTilte';
   --fonte-padrao: 'AndersonGrotesk', sans-serif;
   --fonte-light: 'AndersonGroteskLight', sans-serif;
   /*--fonte-padrao: "open sans", Arial, Helvetica, sans-serif;*/
@@ -64,7 +72,7 @@ button {
 
 button {
   padding: 9px 25px;
-  background-color: #18A0FB;
+  background-color: var(--color-blue);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -74,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: #18A0FB;
+  background-color: #3770e2;
 }
 
 .countdown1 {
@@ -94,6 +102,14 @@ button:hover {
   font-size: 12px;
 }
 
+.best-text-1-line {
+  height: 4px;
+  width: 40%;
+  background-color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
 /* ======================= START HEADER ======================= */
 header {
   width: 100%;
@@ -101,12 +117,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px;
+  font-family: var(--fonte-padrao);
   position: fixed;
   z-index: 9999;
   /*--border:5px solid #04b8ff;*/
   background: linear-gradient(to bottom,
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0));
+      var(--color-white),
+      #fdfbf300);
 }
 
 header nav {
@@ -361,6 +378,7 @@ span+span {
   width: 100%;
   height: 100vh;
   display: flex;
+  font-family: var(--fonte-padrao);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -370,6 +388,7 @@ span+span {
   display: flex;
   align-items: flex-end;
   justify-content: start;
+  background-color: var(--color-white);
   /*border:5px solid #ff0400;*/
 }
 
@@ -475,8 +494,8 @@ span+span {
     width: 100%;
     position: absolute;
     background: linear-gradient(to right,
-        rgb(255, 255, 255),
-        rgba(255, 255, 255, 0));
+        var(--color-white),
+        #fdfbf300);
   }
 
   .home-page-content-right {
@@ -511,10 +530,10 @@ span+span {
 /* ======================= WHAT IS BEST COURSE ======================= */
 .best-background {
   display: flex;
+  font-family: var(--fonte-padrao);
   align-items: center;
   justify-content: center;
-  padding: 8rem 0 5rem;
-
+  padding: 9rem 0 4rem;
 }
 
 .best-box {
@@ -536,16 +555,7 @@ span+span {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-
-}
-
-.best-text-1-line {
-  height: 4px;
-  width: 368px;
-  background-color: black;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
-
+  font-family: var(--fonte-title);
 }
 
 .best-text-1 {
@@ -825,6 +835,53 @@ span+span {
   }
 }
 
+/* ======================= START INFO ======================= */
+.info {
+  padding: 5rem 2rem 4rem;
+  font-family: var(--fonte-padrao);
+}
+
+.title-info {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: var(--fonte-title);
+}
+
+.title-info h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.info-box {
+  width: 55rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.info-box .info-material {
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.05s;
+}
+
+.info-box .info-material img {
+  width: 130px;
+  height: 130px;
+  margin: 2rem 0 1rem;
+}
+
+.info-box .info-material:hover {
+  border: 3px solid black;
+}
+
+
+
+
 /* ======================= START TEAM ======================= */
 .team {
   padding: 6rem 0 8rem;
@@ -836,10 +893,11 @@ span+span {
 }
 
 .team .team-container .title-team h1 {
-  font-size: 3rem;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-weight: 600;
+  font-family: var(--fonte-title);
 }
 
 .team .team-container .team-box {
@@ -927,14 +985,16 @@ span+span {
 .apply {
   text-align: center;
   margin: auto;
+  font-family: var(--fonte-padrao);
   padding-bottom: 6rem;
 }
 
 .apply .apply-title {
-  font-size: 2rem;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 600;
+  font-family: var(--fonte-title);
 }
 
 .apply .apply-countdown {
@@ -961,6 +1021,7 @@ span+span {
 footer {
   padding: 2rem;
   background-color: antiquewhite;
+  font-family: var(--fonte-padrao);
   font-size: 12px;
 }
 
@@ -1022,6 +1083,7 @@ footer .footer-container .footer-down .footer-down-right img {
 .best-gallery {
   display: flex;
   flex-direction: column;
+  font-family: var(--fonte-padrao);
   gap: 15px;
   padding: 5rem 0;
 }
@@ -1033,7 +1095,9 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 
 .best-galley-text h1 {
-  font-size: 28px;
+  font-size: 30px;
+  font-family: var(--fonte-title);
+  margin-bottom: 1.2rem;
 }
 
 .best-gallery-buttons {
@@ -1097,8 +1161,9 @@ footer .footer-container .footer-down .footer-down-right img {
 .best-coimbra {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding: 5rem 0;
+  font-family: var(--fonte-padrao);
+  gap: 35px;
+  padding: 5rem 0 7rem;
 }
 
 .best-coimbra-title {
@@ -1108,7 +1173,8 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 
 .best-coimbra-title h1 {
-  font-size: 35px;
+  font-size: 30px;
+  font-family: var(--fonte-title);
 }
 
 .best-coimbra-below {
