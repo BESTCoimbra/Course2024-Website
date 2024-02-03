@@ -22,3 +22,20 @@ optionsPhone.forEach(option => {
     navbarPhone.style.display = "none";
   });
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const navbar = document.querySelector("header");
+  const homepageLimit = document.querySelector(".home-page").offsetHeight;
+
+  const onScroll = () => {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > homepageLimit) {
+      navbar.style.background = "white"; 
+    } else {
+      navbar.style.background = "";
+    }
+  };
+
+  window.addEventListener("scroll", onScroll);
+});
