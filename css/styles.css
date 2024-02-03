@@ -1086,8 +1086,6 @@ footer .footer-container .footer-down .footer-down-right img {
 
 .best-galley-text {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .best-galley-text h1 {
@@ -1100,7 +1098,7 @@ footer .footer-container .footer-down .footer-down-right img {
   background-color: rgb(232, 232, 232);
   border-radius: 5px;
   display: flex;
-  width: 1300px;
+  width: 1230px;
 }
 
 .best-gallery-below {
@@ -1120,6 +1118,11 @@ footer .footer-container .footer-down .footer-down-right img {
   transition: background-color 0.3s;
 }
 
+.best-gallery-buttons button.clicked {
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px;
+}
+
 .best-gallery-button{
   width: 33.3333%;
 }
@@ -1134,7 +1137,7 @@ footer .footer-container .footer-down .footer-down-right img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap:15px;
 }
 
 .best-gallery-image-1,
@@ -1146,13 +1149,16 @@ footer .footer-container .footer-down .footer-down-right img {
   width: 400px;
   height: 225px;
   background-color: rgb(202, 202, 202);
-  border-radius: 10px;
+  border-radius: 5px;
+  object-fit: cover;
   
 }
 .best-gallery-images img{
   width: 400px;
   height: 225px;
-  border-radius: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  
 }
 
 .best-gallery-images {
