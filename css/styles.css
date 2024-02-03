@@ -484,14 +484,6 @@ span + span {
   gap:5px;
   
 }
-.best-text-1-line{
-  height: 4px;
-  width: 368px;
-  background-color: black;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  
-}
 .best-text-1{
   font-size: 20px;
 }
@@ -502,6 +494,7 @@ span + span {
   font-size: 17px;
 }
 .best-imagens{
+  
   display: flex;
   gap:50px;
 }
@@ -531,7 +524,8 @@ span + span {
   background-color: rgba(255, 217, 147, 0.586);
   background-image: url("../img/image-13.png");
   background-size: cover; 
-    background-position: center;
+  background-position: center;
+  border-radius: 10px;
 }
 .best-imagem-verde{
   width: 335px; 
@@ -587,13 +581,14 @@ span + span {
   font-size:11px;
 }
 .best-simbolo-verde{
-  background-image: url("../img/graduation-cap.png");
+  transform: translateY(-7px);
+  background-image: url("../img/icons/education.png");
   background-size: cover; 
   background-position: center;
   margin-top: 28px;
-  width: 55px;
-  height: 55px;
-}
+  width: 47px;
+  height: 47px;
+  }
 .best-texto-2-verde{
   margin-bottom: 15px;
 }
@@ -637,19 +632,24 @@ span + span {
    font-size:11px;
  }
  .best-simbolo-laranja{
+   transform: translateY(-7.5px);
    background-image: url("../img/support.png");
    background-size: cover; 
    background-position: center;
    margin-top: 28px;
-   width: 55px;
-   height: 55px;
+   width: 50px;
+   height: 50px;
  }
  .best-texto-2-laranja{
    margin-bottom: 15px;
  }
  @media only screen and (max-width: 1131px) {
   .best-imagens{
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
   }
  }
  @media only screen and (max-width: 812px) {
@@ -665,12 +665,7 @@ span + span {
     width: auto;
     font-size: 16px;
   }
-  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
-    width: auto; 
-  }
-  .best-imagens{
-    width: 300px;
-  }
+
  }
  @media only screen and (max-width: 765px) {
   .best-box{
@@ -678,19 +673,16 @@ span + span {
   }
   .best-text-1{
     font-size: 15px;
+    
   }
   .best-text-2{
     height: auto;
     text-align: center;
     width: auto;
     font-size: 16px;
+    max-width: 470px;
   }
-  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
-    width: auto; 
-  }
-  .best-imagens{
-    width: 275px;
-  }
+
  }
  @media only screen and (max-width: 553px) {
   .best-box{
@@ -705,12 +697,8 @@ span + span {
     width: auto;
     font-size: 15px;
   }
-  .best-imagem-1,.best-imagem-2,.best-imagem-3,.best-imagem-verde,.best-imagem-azul,.best-imagem-laranja{
-    width: auto; 
-  }
-  .best-imagens{
-    width: 245px;
-  }
+
+}
 
 /* ======================= START TEAM ======================= */
 .team {
@@ -907,7 +895,7 @@ footer .footer-container .footer-down .footer-down-right img {
   display: flex;
   flex-direction: column;
   gap:15px;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 .best-galley-text{
   display: flex;
@@ -918,12 +906,11 @@ footer .footer-container .footer-down .footer-down-right img {
   font-size: 28px;
 }
 .best-gallery-buttons{
+  border:5px solid blue;
   background-color:rgb(232, 232, 232) ;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
+  width: 1300px;
 }
 
 .best-gallery-below{
@@ -935,11 +922,15 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 .best-gallery-buttons button {
   margin: 0;
-  width: 260px; 
+  width: 100% ; 
   height: 45px;
   color:black;
   background-color: rgb(232, 232, 232);
   transition: background-color 0.3s;
+}
+.best-gallery-button{
+  
+  width: 33.3333%;
 }
 .best-gallery-buttons button:hover {
   background-color: rgb(189, 189, 189);
@@ -956,12 +947,20 @@ footer .footer-container .footer-down .footer-down-right img {
   height: 225px; 
   background-color: rgb(202, 202, 202);
   border-radius: 10px;
+  
+}
+.best-gallery-images img{
+  width: 400px;
+  height: 225px;
+  border-radius: 10px;
 }
 .best-gallery-images{
   display: flex;
   flex-direction: column;
   gap:15px;
 }
+
+
 /* ======================= WHAT IS BEST COIMBRA ======================= */
 .best-coimbra{
   display: flex;
