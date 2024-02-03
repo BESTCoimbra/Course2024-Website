@@ -840,6 +840,101 @@ span+span {
   }
 }
 
+/* ======================= START COURSE ======================= */
+.course {
+  padding: 5rem 3rem;
+  font-family: var(--fonte-padrao);
+}
+
+.title-course {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: var(--fonte-title);
+}
+
+.title-course h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.course-box {
+  max-width: 75rem;
+  width: auto;
+  display: flex;
+  margin: auto;
+}
+
+.course-box-left {
+  width: 50%;
+  padding: 10px;
+}
+
+.course-box-left p {
+  margin-bottom: 15px;
+}
+
+.course-box-right {
+  width: 50%; 
+}
+
+.course-image-box {
+  display: flex;
+  height: 100%;
+}
+
+.course-image-box-left {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/fotos/course.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.course-image-box-left h4 {
+  position: absolute;
+  color: white;
+  font-family: var(--fonte-title);
+  font-size: 25px;
+  top: 0;
+  left: 0;
+  margin: 0.5rem 1rem;
+}
+
+.course-image-box-right {
+  width: 50%;
+  background-image: url(../img/fotos/coimbra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.course-image-box-left, .course-image-box-right {
+  transition: 0.3s ease-in-out;
+}
+
+.course-image-box-right h4 {
+  position: absolute;
+  color: white;
+  font-family: var(--fonte-title);
+  font-size: 25px;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem 1rem;
+}
+
+.course-image-box-left-shadow,
+.course-image-box-right-shadow {
+  background-color: rgba(0, 0, 0, 0.363);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 /* ======================= START INFO ======================= */
 .info {
   padding: 5rem 2rem 4rem;
@@ -1137,7 +1232,7 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 
 .best-gallery-buttons button.clicked {
-  background-color: rgb(189, 189, 189);
+  background-color: var(--color-laranja);
   border-radius: 5px;
 }
 
@@ -1146,7 +1241,7 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 
 .best-gallery-buttons button:hover {
-  background-color: rgb(189, 189, 189);
+  background-color: #ffd6bc;
   border-radius: 5px;
 }
 
