@@ -601,8 +601,9 @@ span+span {
   height: 200px;
   background-color: rgba(255, 217, 147, 0.586);
   background-image: url("../img/image-13.png");
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
+  border-radius: 10px;
 }
 
 .best-imagem-verde {
@@ -650,32 +651,29 @@ span+span {
 }
 
 .best-verde-box {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-left: 28px;
-  margin-right: 130px;
-  margin-bottom: 20px;
-
-  gap: 10px;
+ display: flex;
+ flex-direction: column;
+ margin-top: 20px;
+ margin-left:28px ;
+ margin-right:130px ;
+ margin-bottom: 20px;
+ 
+ gap: 10px;
 }
-
-.best-texto-1-verde,
-.best-texto-2-verde {
-  color: white;
-  font-size: 11px;
+.best-texto-1-verde,.best-texto-2-verde {
+  color:white;
+  font-size:11px;
 }
-
-.best-simbolo-verde {
-  background-image: url("../img/graduation-cap.png");
-  background-size: cover;
+.best-simbolo-verde{
+  transform: translateY(-7px);
+  background-image: url("../img/icons/education.png");
+  background-size: cover; 
   background-position: center;
   margin-top: 28px;
-  width: 55px;
-  height: 55px;
-}
-
-.best-texto-2-verde {
+  width: 47px;
+  height: 47px;
+  }
+.best-texto-2-verde{
   margin-bottom: 15px;
 }
 
@@ -716,7 +714,6 @@ span+span {
   margin-left: 28px;
   margin-right: 130px;
   margin-bottom: 20px;
-
   gap: 10px;
 }
 
@@ -782,6 +779,7 @@ span+span {
 
   .best-text-1 {
     font-size: 15px;
+    
   }
 
   .best-text-2 {
@@ -789,6 +787,7 @@ span+span {
     text-align: center;
     width: auto;
     font-size: 16px;
+    max-width: 470px;
   }
 
   .best-imagem-1,
@@ -890,9 +889,6 @@ span+span {
 .info-box .info-material:hover {
   border: 3px solid black;
 }
-
-
-
 
 /* ======================= START TEAM ======================= */
 .team {
@@ -1096,8 +1092,8 @@ footer .footer-container .footer-down .footer-down-right img {
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-padrao);
-  gap: 15px;
-  padding: 5rem 0;
+  gap:15px;
+  padding: 5rem 2rem;
 }
 
 .best-galley-text {
@@ -1116,9 +1112,7 @@ footer .footer-container .footer-down .footer-down-right img {
   background-color: rgb(232, 232, 232);
   border-radius: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
+  width: 1300px;
 }
 
 .best-gallery-below {
@@ -1131,11 +1125,15 @@ footer .footer-container .footer-down .footer-down-right img {
 
 .best-gallery-buttons button {
   margin: 0;
-  width: 260px;
+  width: 100%; 
   height: 45px;
   color: black;
   background-color: rgb(232, 232, 232);
   transition: background-color 0.3s;
+}
+
+.best-gallery-button{
+  width: 33.3333%;
 }
 
 .best-gallery-buttons button:hover {
@@ -1160,6 +1158,12 @@ footer .footer-container .footer-down .footer-down-right img {
   width: 400px;
   height: 225px;
   background-color: rgb(202, 202, 202);
+  border-radius: 10px;
+  
+}
+.best-gallery-images img{
+  width: 400px;
+  height: 225px;
   border-radius: 10px;
 }
 
