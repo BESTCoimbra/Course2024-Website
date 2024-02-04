@@ -152,7 +152,7 @@ header .nav_links li a:hover {
 }
 
 header .logo-header img {
-  width: 150px;
+  width: 75px;
   height: auto;
   cursor: pointer;
 }
@@ -374,7 +374,7 @@ span+span {
   }
 
   header .logo-header img {
-    width: 120px;
+    width: 60px;
     height: auto;
   }
 
@@ -1041,6 +1041,7 @@ span+span {
 
 .team .team-container .team-box .team-desc-box {
   border: 1px solid black;
+  font-family: 'Arial';
   width: max-content;
   padding: 0.3rem 0.7rem;
   border-radius: 30px;
@@ -1105,7 +1106,7 @@ span+span {
 footer {
   padding: 2rem;
   background-color: antiquewhite;
-  font-family: var(--fonte-padrao);
+  font-family: 'Arial';
   font-size: 12px;
 }
 
