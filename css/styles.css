@@ -442,7 +442,7 @@ span+span {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1060px) {
   .home-page-left-box {
     margin-bottom: 60px;
     margin-left: 50px;
@@ -469,7 +469,7 @@ span+span {
   }
 
   .homepage-left-box-text {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .home-page-left-box-date {
@@ -842,6 +842,7 @@ span+span {
 .course-box-left {
   width: 50%;
   padding: 10px;
+  order: 1;
 }
 
 .course-box-left p {
@@ -849,7 +850,8 @@ span+span {
 }
 
 .course-box-right {
-  width: 50%; 
+  width: 50%;
+  order: 2; 
 }
 
 .course-image-box {
@@ -908,8 +910,51 @@ span+span {
   height: 100%;
 }
 
+@media only screen and (max-width: 1040px) {
+  .course-box {
+    display: block;
+  }
+  .course-box-left {
+    width: 100%;
+    order: 2;
+  }
+  .course-box-right {
+    width: 100%;
+    order: 1;
+    height: 20rem;
+  }
+}
 
+@media only screen and (max-width: 700px) {
+  .title-course {
+    margin-bottom: 1.5rem;
+  }
+  .title-course h1 {
+    font-size: 24px;
+  }
+  .course-box-right {
+    height: 15rem;
+  }
+  .course-image-box h4 {
+    font-size: 20px;
+  }
+}
 
+@media only screen and (max-width: 560px) {
+  .course {
+    padding: 5rem 0 3rem;
+  }
+  .course-box-left {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .course-image-box h4 {
+    font-size: 17px;
+  }
+}
 /* ======================= START INFO ======================= */
 .info {
   padding: 7rem 2rem 4rem;
