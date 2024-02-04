@@ -460,11 +460,11 @@ span+span {
 
   .countdown1 .countdown1-number {
     margin-top: 8px;
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .countdown1 .countdown1-number-text {
-    margin-top: 4px;
+    margin-top: 0;
     font-size: 8px;
   }
 
@@ -798,6 +798,16 @@ span+span {
 @media only screen and (max-width: 553px) {
   .best-box {
     width: 90%;
+    gap: 30px;
+  }
+
+  .best-background {
+    padding: 4rem 0;
+  }
+
+  .best-imagens {
+    display: flex;
+    gap: 20px;
   }
 
   .best-text-1 {
@@ -811,8 +821,10 @@ span+span {
     font-size: 15px;
   }
 
-  
-
+  .best-text-box p {
+    text-align: start;
+    font-size: 14px;
+  }
 }
 
 /* ======================= START COURSE ======================= */
@@ -942,7 +954,7 @@ span+span {
 
 @media only screen and (max-width: 560px) {
   .course {
-    padding: 5rem 0 3rem;
+    padding: 2rem 0;
   }
   .course-box-left {
     padding: 20px;
@@ -1015,6 +1027,9 @@ span+span {
   border: 3px solid black;
 }
 @media only screen and (max-width: 885px) {
+  .info {
+    padding: 2rem 2rem 2rem;
+  }
   .info-box {
     display: flex;
     flex-direction: column;
@@ -1136,11 +1151,17 @@ span+span {
   }
 }
 @media only screen and (max-width: 638px) {
+  .team {
+    padding: 4rem 0;
+  }
   .team .team-container .team-box {
-    width: 28rem;
+    width: 18rem;
   }
   .team .team-container .title-team h1 {
     font-size: 26px;
+  }
+  .team .team-container .team-box li {
+    margin: 0.5rem;
   }
 }
 /* ======================= START APPLY ======================= */
@@ -1179,6 +1200,11 @@ span+span {
   margin: 0;
 }
 
+@media only screen and (max-width: 1060px) {
+  .apply .apply-check-social-media p {
+    font-size: 20px;
+  }
+}
 /* ======================= START FOOTER ======================= */
 footer {
   padding: 2rem;
@@ -1257,11 +1283,24 @@ footer .footer-container .footer-down .footer-down-right img {
   }
 }
 @media only screen and (max-width: 580px) {
+  footer {
+    padding-top: 1rem;
+  }
   footer .footer-container .footer-up .footer-up-right {
     flex-direction: column;
     align-items: center;
     gap:17px;
     text-align: center; 
+  }
+  .footer-up-left {
+    margin-bottom: 10px;
+  }
+  .footer-down-right {
+    flex-direction: column;
+  }
+  .footer-down-right-net {
+    margin-top: 10px;
+    padding-right: 1rem;
   }
 }
  
@@ -1441,52 +1480,71 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 @media only screen and (max-width: 628px) {
   .best-gallery-buttons {
-      width: 450px;
-    }
-  
-    .best-gallery-image-1,
-    .best-gallery-image-2,
-    .best-gallery-image-3,
-    .best-gallery-image-4,
-    .best-gallery-image-5,
-    .best-gallery-image-6 {
-      width: 141px;
-      height: 78px;
-    }
-  
-    .best-gallery-images img {
-      width: 141px;
-      height: 78px;
-    }
-  
-    .best-gallery-text h1 {
-      font-size: 23px;
-    }
+    width: 450px;
   }
-  @media only screen and (max-width: 535px) {
-    .best-gallery-buttons {
-        width: 375px;
-      }
-    
-      .best-gallery-image-1,
-      .best-gallery-image-2,
-      .best-gallery-image-3,
-      .best-gallery-image-4,
-      .best-gallery-image-5,
-      .best-gallery-image-6 {
-        width: 115px;
-        height: 85px;
-      }
-    
-      .best-gallery-images img {
-        width: 115px;
-        height: 85px;
-      }
-    
-      .best-gallery-text h1 {
-        font-size: 23px;
-      }
-    }
+
+  .best-gallery-image-1,
+  .best-gallery-image-2,
+  .best-gallery-image-3,
+  .best-gallery-image-4,
+  .best-gallery-image-5,
+  .best-gallery-image-6 {
+    width: 141px;
+    height: 78px;
+  }
+
+  .best-gallery-images img {
+    width: 141px;
+    height: 78px;
+  }
+
+  .best-gallery-text h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .best-gallery {
+    padding: 2rem 0;
+  }
+
+  .best-gallery-buttons {
+    width: 356px;
+  }
+
+  .best-gallery-image-1,
+  .best-gallery-image-2,
+  .best-gallery-image-3,
+  .best-gallery-image-4,
+  .best-gallery-image-5,
+  .best-gallery-image-6 {
+    width: 115px;
+    height: 85px;
+  }
+
+  .best-gallery-images {
+    gap: 5px;
+  }
+
+  .best-gallery-image-row,
+  .best-gallery-image-row-2 {
+    gap: 5px;
+  }
+
+  .best-gallery-below {
+    gap: 10px;
+  }
+
+  .best-gallery-buttons button {
+    padding: 0;
+    height: 35px;
+  }
+
+  .best-gallery-images img {
+    width: 115px;
+    height: 85px;
+  }
+}
 
 /* ======================= WHAT IS BEST COIMBRA ======================= */
 .best-coimbra {
@@ -1598,8 +1656,14 @@ footer .footer-container .footer-down .footer-down-right img {
 }
 
 @media only screen and (max-width: 559px) {
+  .best-coimbra {
+    gap: 25px;
+  }
   .best-coimbra-below {
-    width: 28rem;
+    max-width: 20rem;
+    width: auto;
+    padding: 0;
+    gap: 20px;
   }
 
   .best-coimbra-image {
@@ -1614,6 +1678,6 @@ footer .footer-container .footer-down .footer-down-right img {
   }
 
   .best-coimbra-title h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }

@@ -62,12 +62,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const homepageLimit = document.querySelector(".home-page").offsetHeight;
 
   const onScroll = () => {
-    const scrollPosition = window.scrollY;
+    const scrollPosition = window.scrollY+navbar.offsetHeight;
 
     if (scrollPosition > homepageLimit) {
       navbar.style.background = "white"; 
+      navbar.style.boxShadow = "0px 1px 5px #0000006e"; 
     } else {
       navbar.style.background = "";
+      navbar.style.boxShadow = "";
     }
   };
 
