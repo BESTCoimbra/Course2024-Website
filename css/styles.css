@@ -1228,6 +1228,11 @@ footer .footer-container .footer-up img {
   height: 60px;
 }
 
+#logo-best-course {
+  height: 35px;
+  margin-bottom: 8px;
+}
+
 footer .footer-container .footer-up p {
   margin-bottom: 0.3rem;
 }
@@ -1266,13 +1271,18 @@ footer .footer-container .footer-down .footer-down-right a {
 footer .footer-container .footer-down .footer-down-right img {
   width: 30px;
 }
-@media only screen and (max-width: 708px) {
+@media only screen and (max-width: 970px) {
   footer .footer-container .footer-up {
     flex-direction: column;
     gap: 10px;
   }
   footer .footer-container .footer-up-left {
     text-align: center;
+  }
+  footer .footer-container .footer-up-right {
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
   }
   footer .footer-container .footer-down {
     flex-direction: column;
@@ -1282,7 +1292,7 @@ footer .footer-container .footer-down .footer-down-right img {
     width: 26px; 
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 595px) {
   footer {
     padding-top: 1rem;
   }
@@ -1294,6 +1304,9 @@ footer .footer-container .footer-down .footer-down-right img {
   }
   .footer-up-left {
     margin-bottom: 10px;
+  }
+  .footer-down{
+    text-align: center;
   }
   .footer-down-right {
     flex-direction: column;
