@@ -209,7 +209,7 @@
                         <h3>Materials</h3>
                     </div>
                 </a>
-                <a href="https://drive.google.com/file/d/1fc8oVPUyboq-ZM9iUgNOrv5HVeGa-mSU/view?usp=share_link" target="_blank">
+                <a href="https://drive.google.com/file/d/13Mr4ffgSO6p-WXjNoNISuUQ2ybPMhQwl/view?usp=drive_link" target="_blank">
                     <div class="info-material">
                         <img src="img/icons/output-onlinepngtools(1).png" alt="icon-survival">
                         <h3>Survival Guide</h3>
@@ -352,8 +352,7 @@
                     <a href="https://www.instagram.com/bestcoimbra/" target="_blank"><img src="img/icons/instagram.png"
                             alt="Instagram"></a>
                     <a href="https://www.facebook.com/BESTCoimbra" target="_blank"><img src="img/icons/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.linkedin.com/company/best-coimbra/" target="_blank"><img src="img/icons/linkedin.png"
-                            alt="Linkdin"></a>
+                    <a href="https://www.linkedin.com/company/best-coimbra/" target="_blank"><img src="img/icons/linkedin.png" alt="Linkdin"></a>
                 </div>
             </div>
         </section>
@@ -366,6 +365,11 @@
             <h1>Gallery</h1>
         </div>
         <div class="best-gallery-below">
+            <div id="best-gallery-imageModal" class="best-gallery-modal">
+                <div  class="best-gallery-modal-box">
+                    <img class="best-gallery-modal-content" id="best-gallery-img01">
+                </div>
+            </div>
             <div class="best-gallery-buttons">
                 <div class="best-gallery-button">
                     <button data-year="2023">2023</button>
@@ -380,71 +384,68 @@
             <div class="best-gallery-images">
                 <div class="best-gallery-image-row" id="gallery-2023" style="display: none;">
                     <div class="best-gallery-image-1" id="img2023-1">
-                        <img src="img/2023/imagem-1.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-1.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-2" id="img2023-2">
-                        <img src="img/2023/imagem-2.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-2.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-3" id="img2023-3">
-                        <img src="img/2023/imagem-3.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-3.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
                 <div class="best-gallery-image-row-2" id="gallery-2023-2" style="display: none;">
                     <div class="best-gallery-image-4" id="img2023-4">
-                        <img src="img/2023/imagem-4.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-4.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-5" id="img2023-5">
-                        <img src="img/2023/imagem-5.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-5.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-6" id="img2023-6">
-                        <img src="img/2023/imagem-6.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2023/imagem-6.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
                 <div class="best-gallery-image-row" id="gallery-2022" style="display: none;">
                     <div class="best-gallery-image-1" id="img2022-1">
-                        <img src="img/2022/imagem-1.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-1.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-2" id="img2022-2">
-                        <img src="img/2022/imagem-2.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-2.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-3" id="img2022-3">
-                        <img src="img/2022/imagem-3.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-3.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
-                <!-- Adicione imagens para o ano de 2022, linha 2 -->
                 <div class="best-gallery-image-row-2" id="gallery-2022-2" style="display: none;">
                     <div class="best-gallery-image-4" id="img2022-4">
-                        <img src="img/2022/imagem-4.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-4.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-5" id="img2022-5">
-                        <img src="img/2022/imagem-5.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-5.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-6" id="img2022-6">
-                        <img src="img/2022/imagem-6.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2022/imagem-6.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
-                <!-- Adicione imagens para o ano de 2019, linha 1 -->
                 <div class="best-gallery-image-row" id="gallery-2019">
                     <div class="best-gallery-image-1" id="img2019-1">
-                        <img src="img/2019/imagem-1.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2019/imagem-1.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-2" id="img2019-2">
-                        <img src="img/2019/imagem-2.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2019/imagem-2.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-3" id="img2019-3">
-                        <img src="img/2019/imagem-3.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2019/imagem-3.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
-                <!-- Adicione imagens para o ano de 2019, linha 2 -->
                 <div class="best-gallery-image-row-2" id="gallery-2019-2" style="display: none;">
                     <div class="best-gallery-image-4" id="img2019-4">
-                        <img src="img/2019/imagem-4.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2019/imagem-4.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-5" id="img2019-5">
-                        <img src="img/2019/imagem-5.jpg" alt="Best-Coimbra" id="Best-Coimbra">
+                        <img src="img/2019/imagem-5.jpg" alt="Best-Coimbra">
                     </div>
                     <div class="best-gallery-image-6" id="img2019-6">
-                        <img src="img/2019/imagem-6.jpg" alt="Best-Coimbra" id="Best-Coimbra"> <!-- TROCAR -->
+                        <img src="img/2019/imagem-6.jpg" alt="Best-Coimbra">
                     </div>
                 </div>
             </div>
