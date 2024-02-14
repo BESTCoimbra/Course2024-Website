@@ -123,9 +123,12 @@ document.querySelectorAll(".best-gallery-images img").forEach((item) => {
   };
 });
 
+document.getElementsByClassName("best-gallery-close")[0].onclick = function () {
+  document.getElementById("best-gallery-imageModal").style.display = "none";
+};
+
 window.onclick = function (event) {
   if (event.target == document.getElementById("best-gallery-imageModal")) {
-    console.log("ola");
     document.getElementById("best-gallery-imageModal").style.display = "none";
   }
 };
